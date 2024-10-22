@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopdee Mall</title>
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+</head>
+<body>
+    <div class="header">
+        <h1 class="title">Shopping Cart</h1>
+    </div>
+
+    <div class="sub-header">
+        <h2>Add Item for Selection</h2>
+    </div>
+    
+
+    <!-- add new product section -->
+    <div class="product-form">
+        <!-- create product name box -->
+        <div class="product-name-box">
+            <label for="product-name">Product Name:</label>
+            <input type="text" id="product-name" name="enter-product" placeholder="enter product name"/>
+        </div>
+
+
+        <!-- create price box -->
+        <div class="price-box">
+            <label for="product-price">Price:</label>
+            <input type="number" id="product-price" name="enter-price" placeholder="enter price of product"/>
+        </div>
+
+
+        <!-- create image box -->
+        <div class="image-box">
+            <label for="product-image">Image:</label>
+            <input type="text" id="product-image" name="enter-image" placeholder="enter image url"/>
+        </div>
+
+
+        <!-- create button to add new product -->
+        <div>
+            <button id="product-add">Create Product</button>
+        </div>
+    </div>
+
+    <!-- list of product that used by DOM -->
+    <div class="product-dashboard">
+        <ul id="product-list"></ul>
+    </div>
+
+    <!-- --------------------------------------- -->
+    <div>
+        <button id="cart-add">Add to cart</button>
+    </div>
+
+    <div>
+        <ul id="cart-list"></ul>
+    </div>
+
+    <!-- --------------------------------------- -->
+    <div>
+        <p id="total-price"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
